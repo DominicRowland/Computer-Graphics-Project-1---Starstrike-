@@ -1,0 +1,183 @@
+/* Main Content */
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #050510;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #050510;
+}
+
+
+/* Screens */
+#titlescreen {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#endscreen {
+    display: none;
+}
+
+
+/* Screen Functions */
+#titlescreen.fadeout {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* Titlescreen Items */
+#titletext {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    padding: 12px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 36px;
+    line-height: 1.4;
+    z-index: 10;
+    transform: translate(-50%);
+}
+
+#startbutton {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    padding: 12px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 36px;
+    line-height: 1.4;
+    z-index: 10;
+    transform: translate(-50%);
+    border: 1px solid transparent;
+    color: #ffffff;
+}
+
+#startbutton:hover {
+    border: 1px solid white;
+}
+
+/* Start game info boxes */
+#infotext {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    padding: 12px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 1.4;
+    z-index: 10;
+    transform: translate(-50%);
+    pointer-events: none;
+}
+
+#infotext2 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    padding: 12px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 1.4;
+    z-index: 10;
+    transform: translate(-50%);
+    pointer-events: none;
+}
+
+
+/* Info box functions */
+#infotext.fadeout {
+    opacity: 0;
+}
+
+#infotext.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#infotext2.fadeout {
+    opacity: 0;
+}
+
+#infotext2.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* Endscreen Items*/
+#starscollectedtext {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    padding: 12px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 36px;
+    line-height: 1.4;
+    z-index: 10;
+    transform: translate(-50%);
+}
+
+#exitbutton {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    padding: 12px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 1.4;
+    z-index: 10;
+    transform: translate(-50%);
+    border: 1px solid transparent;
+    color: #ffffff;
+}
+
+#exitbutton:hover {
+    border: 1px solid white;
+}
+
+
+/* Always active texts */
+#tabtext {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    padding: 12px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    z-index: 10;
+}
+
+#scoretext {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    padding: 12px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    z-index: 10;
+}
